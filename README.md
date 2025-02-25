@@ -25,12 +25,12 @@ In the output, you'll find options to open the app in a
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Demo Videos
+## App Demo
 
-Check out how the app works on different platforms:
+Here's how the app looks in action:
 
-- [iOS Demo](ios.mp4)
-- [Android Demo](android.mp4)
+![iOS Demo](demo-ios.gif)
+![Android Demo](demo-android.gif)
 
 ## Get a fresh project
 
