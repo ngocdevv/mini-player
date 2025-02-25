@@ -29,8 +29,8 @@ You can start developing by editing the files inside the **app** directory. This
 
 Here's how the app looks in action:
 
-![iOS Demo](demo-ios.gif)
-![Android Demo](demo-android.gif)
+![iOS Demo](video_ios.gif)
+![Android Demo](video_android.gif)
 
 ## Get a fresh project
 
