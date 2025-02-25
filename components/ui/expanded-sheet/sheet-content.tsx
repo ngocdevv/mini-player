@@ -17,6 +17,7 @@ import { BaseOffset, ImageHeight } from "./constants";
 import { ExpandedFooter } from "./expanded-footer";
 import { InteractionList } from "./interaction-list";
 import { BalanceSlider } from "../balance-slider";
+import MaterialIcons from "@expo/vector-icons/build/MaterialIcons";
 import { IconSymbol } from "../IconSymbol";
 
 const width = Dimensions.get("screen").width;
@@ -91,7 +92,7 @@ export const SheetContent = ({ progress }: SheetContentProps) => {
           <Text style={styles.subtitle}>Sơn Tùng M-TP</Text>
         </View>
         <View>
-          <IconSymbol name="play" color={"#ffffff"} size={24} />
+          <MaterialIcons name="play-arrow" color={"#ffffff"} size={24} />
         </View>
       </Animated.View>
 
@@ -127,13 +128,13 @@ export const SheetContent = ({ progress }: SheetContentProps) => {
           />
         </View>
         <View style={styles.control}>
-          <IconSymbol name="shuffle" color={"#ffffff"} />
-          <IconSymbol name="backward.fill" color={"#ffffff"} />
+          <MaterialIcons name="shuffle" color={"#ffffff"} size={24} />
+          <MaterialIcons name="skip-previous" color={"#ffffff"} size={24} />
           <Pressable style={styles.playButton} onPress={() => {}}>
-            <IconSymbol name="play.fill" color={"#000000"} />
+            <MaterialIcons name="play-arrow" color={"#000000"} size={30} />
           </Pressable>
-          <IconSymbol name="forward.fill" color={"#ffffff"} />
-          <IconSymbol name="repeat" color={"#ffffff"} />
+          <MaterialIcons name="skip-next" color={"#ffffff"} size={24} />
+          <MaterialIcons name="repeat" color={"#ffffff"} size={24} />
         </View>
       </Animated.View>
       <ExpandedFooter progressShared={progress} />

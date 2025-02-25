@@ -15,6 +15,7 @@ import { SheetContent } from "./sheet-content";
 import { EasingsUtils } from "@/constants/easings";
 import { ExpandedSheetMutableProgress } from "../bottom-tab-bar/shared-progress";
 import { IconSymbol } from "../IconSymbol";
+import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 
 const windowHeight = Dimensions.get("screen").height;
 
@@ -135,7 +136,7 @@ export const ExpandedSheet = () => {
           ]}
         >
           <Pressable onPress={onClose}>
-            <IconSymbol size={20} name="chevron.down" color={"#ffffff"} />
+            <MaterialIcons size={24} name="arrow-drop-down" color={"#ffffff"} />
           </Pressable>
         </Animated.View>
         <SheetContent progress={progress} />
