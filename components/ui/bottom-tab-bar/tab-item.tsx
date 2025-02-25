@@ -4,6 +4,7 @@ import React, { useCallback } from "react";
 import { StyleSheet } from "react-native";
 import { useAnimatedStyle, withTiming } from "react-native-reanimated";
 import { IconSymbol } from "../IconSymbol";
+import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 
 type TabItemProps = {
   screen: string;
@@ -29,23 +30,13 @@ export const TabItem = ({
   const Icon = useCallback(() => {
     switch (screen) {
       case "index":
-        return <IconSymbol size={28} name="house.fill" color={"#ffffff"} />;
+        return <MaterialIcons size={28} name="home" color={"#ffffff"} />;
       case "music":
-        return (
-          <IconSymbol size={28} name="music.house.fill" color={"#ffffff"} />
-        );
+        return <MaterialIcons size={28} name="music-note" color={"#ffffff"} />;
       case "library":
-        return (
-          <IconSymbol
-            size={28}
-            name="apple.image.playground.fill"
-            color={"#ffffff"}
-          />
-        );
+        return <MaterialIcons size={28} name="library-add" color={"#ffffff"} />;
       case "explore":
-        return (
-          <IconSymbol size={28} name="paperplane.fill" color={"#ffffff"} />
-        );
+        return <MaterialIcons size={28} name="explore" color={"#ffffff"} />;
       default:
         return null;
     }
