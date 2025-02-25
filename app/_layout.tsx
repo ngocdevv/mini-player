@@ -4,9 +4,11 @@ import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { StatusBar } from "expo-status-bar";
 import { useEffect } from "react";
+import * as NavigationBar from "expo-navigation-bar";
 import "react-native-reanimated";
 
 import { GestureHandlerRootView } from "react-native-gesture-handler";
+import { Platform } from "react-native";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -19,6 +21,11 @@ export default function RootLayout() {
   useEffect(() => {
     if (loaded) {
       SplashScreen.hideAsync();
+    }
+    if (Platform.OS === "android") {
+      NavigationBar.setBackgroundColorAsync("#00000000");
+      NavigationBar.setPositionAsync("absolute");
+      NavigationBar.setVisibilityAsync("hidden");
     }
   }, [loaded]);
 

@@ -2,6 +2,7 @@ import React from "react";
 import {
   Dimensions,
   Image,
+  Platform,
   Pressable,
   StyleSheet,
   Text,
@@ -18,7 +19,6 @@ import { ExpandedFooter } from "./expanded-footer";
 import { InteractionList } from "./interaction-list";
 import { BalanceSlider } from "../balance-slider";
 import MaterialIcons from "@expo/vector-icons/build/MaterialIcons";
-import { IconSymbol } from "../IconSymbol";
 
 const width = Dimensions.get("screen").width;
 
