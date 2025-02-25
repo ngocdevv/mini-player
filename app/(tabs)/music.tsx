@@ -1,9 +1,8 @@
-import { StyleSheet, Image, Platform, View, Text } from "react-native";
-
-export default function TabTwoScreen() {
+import { StyleSheet, View, Text } from "react-native";
+export default function MusicScreen() {
   return (
     <View style={styles.container}>
-      <Text>Explore</Text>
+      <Text>Music</Text>
     </View>
   );
 }

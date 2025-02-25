@@ -1,9 +1,9 @@
-import { StyleSheet, Image, Platform, View, Text } from "react-native";
+import { Image, StyleSheet, Platform, View, Text } from "react-native";
 
-export default function TabTwoScreen() {
+export default function LibraryScreen() {
   return (
     <View style={styles.container}>
-      <Text>Explore</Text>
+      <Text>Library</Text>
     </View>
   );
 }
